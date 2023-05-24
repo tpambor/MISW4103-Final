@@ -11,6 +11,17 @@ Equipo #3
 
 [Estrategias usadas](https://github.com/tpambor/MISW4103-GenDatos/wiki/Estrategias-usadas)
 
+## Instrucciones para ejectuar análisis de código estático con [eslint](https://eslint.org/)
+1. Iniciar un contenedor docker de Node 12.22.12 con `docker run --rm -it node:12.22.12-bullseye bash`
+2. Preparar el entorno con el commando `apt update && apt install -y libvips-dev python-is-python3`
+3. Instalar el código fuente de Ghost con `git clone https://github.com/TryGhost/Ghost.git`
+4. Ir al carpeta con el código de Ghost con `cd Ghost`
+5. Hacer checkout de la versión 3.41.1 con `git checkout tags/3.41.1`
+6. Bajar los git submodules con `git submodule update --init --recursive`
+7. Instalar las dependencias con `yarn install`
+8. Instalar las dependencias para ejecutar eslint con `yarn add babel-eslint`
+9. Ejecutar el análisis de código estático con eslint usando `node_modules/.bin/eslint 'core/**/*.js'`
+
 ## Instrucciones para ejecutar pruebas Cypress
 1. Clonar este repositorio
 2. Ir a la carpeta Cypress
