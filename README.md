@@ -110,6 +110,18 @@ VIDEO - FALTA
 8. Desde la carpeta ResembleJS ejecutar el comando  `node index.js`
 9. Abrir el reporte, que queda en /ResembleJS/results/report.html
 
+### Generación de reporte automatizada utilizando pipeline de Github Actions
+- Github actions workflow utilizado https://github.com/tpambor/MISW4103-Final/blob/main/.github/workflows/cypress.yml
+- Evidencia de ejecución: https://github.com/tpambor/MISW4103-Final/actions/runs/5101154214
+- Genera de manera automática
+  - Screenshots de 21 escenarios usando Cypress, Chrome y Ghost 3.41.1
+  - Screenshots de 21 escenarios usando Cypress, Firefox y Ghost 3.41.1
+  - Screenshots de 21 escenarios usando Cypress, Chrome y Ghost 4.44.0
+  - Reporte en formato HTML de las pruebas de regresión visual
+  - Video de la ejecución de Cypress con Ghost 3.41.1
+  - Video de la ejecución de Cypress con Ghost 4.44.0
+- Gracias a Github Pages, los resultados están disponibles en https://tpambor.github.io/MISW4103-Final/
+
 <a name="kraken"></a>
 ## Instrucciones para ejecutar pruebas Kraken y Kraken-Apriori (E2E y Generación de Datos)
 1. Ejecutar Ghost 3.41.1 con Docker `docker run --rm -t -p 2368:2368 ghost:3.41.1` (recomendado) o de forma local siguiendo las instrucciones del [tutorial](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/ghost-local-deployment/index.html)
