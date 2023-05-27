@@ -15,7 +15,7 @@ VIDEO - FALTA
 ## Aspectos complementarios
 * [Inventario de pruebas manuales](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/Inventario%20de%20Pruebas%20Exploratorias.xlsx)
 * [Wiki con Pros y Contras de Herramientas](https://github.com/tpambor/MISW4103-Final/wiki)
-* [RESULTADOS DE ESTA SEMANA](https://github.com/tpambor/MISW4103-Final/wiki/Resultados-Semana-8)
+* [Resultados de esta semana](https://github.com/tpambor/MISW4103-Final/wiki/Resultados-Semana-8)
 * [Retrospectiva](https://miro.com/app/board/uXjVMFMo-RM=/?share_link_id=289633975934)
 
 ## Instrucciones para ejecutar las diferentes pruebas
@@ -25,6 +25,24 @@ VIDEO - FALTA
 * [Pruebas con Cypress](#cypress)
 * [Reporte de regresión visual](#reporte)
 * [Pruebas con Kraken](#kraken)
+
+<a name="sonarqube"></a>
+## Instrucciones para ejectuar análisis de código estático con [Sonarqube](https://www.sonarsource.com/products/sonarqube/)
+1. Es necesario tener acceso a una instancia de Sonarqube, si aun no cuentas con una instancia de Sonarqube puedes crear una nueva instancia siguiendo las instrucciones en https://docs.sonarqube.org/latest/try-out-sonarqube/
+2. Crear un nuevo proyecto en Sonarqube como en el imagen
+![Create](https://github.com/tpambor/MISW4103-Final/assets/1379478/84eadc3b-90e3-4b66-9608-0753f5241304)
+3. Seleccionar "Locally"
+![Create](https://github.com/tpambor/MISW4103-Final/assets/1379478/9be34120-bd39-464e-a95b-6f90d154b94a)
+4. Generar un nuevo token de acceso
+![Create](https://github.com/tpambor/MISW4103-Final/assets/1379478/bce521f8-5f8d-4f23-bd85-867e3a803128)
+5. Bajar el código fuente de Ghost con `git clone https://github.com/TryGhost/Ghost.git`
+6. Ir al carpeta con el código de Ghost con `cd Ghost`
+7. Hacer checkout de la versión 3.41.1 con `git checkout tags/3.41.1`
+8. Bajar los git submodules con `git submodule update --init --recursive`
+9. Bajar y instalar el SonarScanner de la página https://docs.sonarqube.org/10.0/analyzing-source-code/scanners/sonarscanner/
+10. Ejecutar el análsis de código estático con `sonar-scanner -Dsonar.projectKey=MISW4103-FINAL-GRUPO3 -Dsonar.sources=core -Dsonar.host.url=<SONAR_URL> -Dsonar.token=<SONAR_TOKEN>` donde <SONAR_URL> es la URL a la instancia de Sonarqube y <SONAR_TOKEN> es el token creado
+12. En la página del proyecto en Sonarqube se puede mirar los resultados
+![Screenshot 2023-05-25 11 08 55](https://github.com/tpambor/MISW4103-Final/assets/1379478/2ef97857-335f-4ee5-8ba0-b2be9c5ea895)
 
 <a name="eslint"></a>
 ## Instrucciones para ejectuar análisis de código estático con [ESLint](https://eslint.org/)
@@ -48,13 +66,13 @@ VIDEO - FALTA
 6. En esa misma carpeta crear un archivo llamado ".jshintrc" que internamente tiene lo siguiente:
 ```json
 {
-  "esversion": 9,
+  "esversion": 11,
   "globals":{
     "Promise":true
   }
 }
 ```
-7. Ejecutar el análisis con `node node_modules/bin/jshint core`
+7. Ejecutar el análisis con `node node_modules/jshint/bin/jshint core`
 
 <a name="cypress"></a>
 ## Instrucciones para ejecutar pruebas con Cypress (E2E, VRT y Generación de Datos)
