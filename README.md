@@ -31,7 +31,7 @@ VIDEO - FALTA
 * [Pruebas con Kraken](#kraken)
 
 <a name="sonarqube"></a>
-## Instrucciones para ejectuar análisis de código estático con [Sonarqube](https://www.sonarsource.com/products/sonarqube/)
+## Instrucciones para ejecutar análisis de código estático con [Sonarqube](https://www.sonarsource.com/products/sonarqube/)
 1. Es necesario tener acceso a una instancia de Sonarqube, si aun no cuentas con una instancia de Sonarqube puedes crear una nueva instancia siguiendo las instrucciones en https://docs.sonarqube.org/latest/try-out-sonarqube/
 2. Crear un nuevo proyecto en Sonarqube como en el imagen
 ![Create](https://github.com/tpambor/MISW4103-Final/assets/1379478/84eadc3b-90e3-4b66-9608-0753f5241304)
@@ -49,7 +49,7 @@ VIDEO - FALTA
 ![Screenshot 2023-05-25 11 08 55](https://github.com/tpambor/MISW4103-Final/assets/1379478/2ef97857-335f-4ee5-8ba0-b2be9c5ea895)
 
 <a name="eslint"></a>
-## Instrucciones para ejectuar análisis de código estático con [ESLint](https://eslint.org/)
+## Instrucciones para ejecutar análisis de código estático con [ESLint](https://eslint.org/)
 1. Iniciar un contenedor docker de Node 12.22.12 con `docker run --rm -it node:12.22.12-bullseye bash`
 2. Preparar el entorno con el commando `apt update && apt install -y libvips-dev python-is-python3`
 3. Instalar el código fuente de Ghost con `git clone https://github.com/TryGhost/Ghost.git`
@@ -61,7 +61,7 @@ VIDEO - FALTA
 9. Ejecutar el análisis de código estático con eslint usando `node_modules/.bin/eslint 'core/**/*.js'`
 
 <a name="jshint"></a>
-## Instrucciones para ejectuar análisis de código estático con [JSHint](https://jshint.com/)
+## Instrucciones para ejecutar análisis de código estático con [JSHint](https://jshint.com/)
 1. Instalar el código fuente de Ghost con `git clone https://github.com/TryGhost/Ghost.git`
 2. Ir al carpeta con el código de Ghost con `cd Ghost`
 3. Hacer checkout de la versión 3.41.1 con `git checkout tags/3.41.1`
