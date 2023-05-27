@@ -7,7 +7,11 @@ Equipo #3
 - Tim Ulf Pambor, t.pambor@uniandes.edu.co​​
 
 ## Estrategia final de pruebas
-[ESTRATEGIA](https://github.com/tpambor/MISW4103-Final/wiki/Estrategia-de-pruebas)
+[Estrategia Final del Grupo #3](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/estrategia-grupo3.pdf).
+
+Puede verse el documento en Word aquí: [Estrategia en Word](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/estrategia-grupo3.docx).
+
+Un resumen de la estrategia se puede encontrar aquí: [Resumen estrategia](https://github.com/tpambor/MISW4103-Final/wiki/Estrategia-de-pruebas).
 
 ## Video
 VIDEO - FALTA
