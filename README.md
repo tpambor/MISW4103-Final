@@ -94,7 +94,7 @@ VIDEO - FALTA
     * Para Linux, ejecuta `./node_modules/.bin/cypress open` para iniciar Cypress
     * Para Windows, ejecuta `node_modules\.bin\cypress open` para iniciar Cypress
 9. Seleccionar `E2E Testing`
-10. Seleccionar `Chrome`/`Chromium` y haz clic en `Start E2E Testing in Chromium`
+10. Seleccionar `Chrome`/`Chromium` (o `Firefox` si desea ejecuta pruebas de regresión visual con dos diferentes navegadores) y haz clic en `Start E2E Testing in Chromium`
 11. Seleccionar el archivo que se desea ejecutar (create-post, create-tag, editar-perfil, editar-design, create-tag-pseudo, editar-perfil-pseudo).
 12. Se puede observar la ejecución de las pruebas y sus resultados, tanto los exitosos como los que fallan (de los cuales se reportan los correspondientes issues). Si se habilitó la opción de screenshots, se pueden ver las imágenes en la carpeta "screenshots" bajo "cypress".
 
