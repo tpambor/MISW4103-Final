@@ -15,7 +15,7 @@ VIDEO - FALTA
 ## Aspectos complementarios
 * [Inventario de pruebas manuales](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/Inventario%20de%20Pruebas%20Exploratorias.xlsx)
 * [Wiki con Pros y Contras de Herramientas](https://github.com/tpambor/MISW4103-Final/wiki)
-* [RESULTADOS DE ESTA SEMANA] - (https://github.com/tpambor/MISW4103-Final/wiki/Resultados-Semana-8)
+* [RESULTADOS DE ESTA SEMANA](https://github.com/tpambor/MISW4103-Final/wiki/Resultados-Semana-8)
 * [Retrospectiva](https://miro.com/app/board/uXjVMFMo-RM=/?share_link_id=289633975934)
 
 ## Instrucciones para ejecutar las diferentes pruebas
