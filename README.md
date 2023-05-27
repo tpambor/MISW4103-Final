@@ -7,6 +7,9 @@ Equipo #3
 - Leidy Viviana Osorio Jimenez, l.osorioj@uniandes.edu.co​​
 - Tim Ulf Pambor, t.pambor@uniandes.edu.co​​
 
+## Retrospectiva
+https://miro.com/app/board/uXjVMFMo-RM=/?share_link_id=289633975934
+
 ## Descripción de las estrategias usadas
 
 [Estrategias usadas](https://github.com/tpambor/MISW4103-GenDatos/wiki/Estrategias-usadas)
