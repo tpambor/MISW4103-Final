@@ -104,9 +104,9 @@ VIDEO - FALTA
 2. Ir a la carpeta ResembleJS
 3. Instalar las dependencias con `npm install`
 4. En la carpeta ResembleJS crear una carpeta llamada "ghost3". 
-5. Copiar en esta carpeta los screenshots resultantes de la ejecución con Ghost3 (que están dentro de la carpeta screenshots). O también se puede decargar y descomprimir en esta carpeta el archivo "cypress-screenshots-ghost3" que se encuentra en [Resultados ejecución pruebas](https://github.com/tpambor/MISW4103-VRT/actions/runs/4970812573).
+5. Copiar en esta carpeta los screenshots resultantes de la ejecución con Ghost3 (que están dentro de la carpeta screenshots). O también se puede decargar y descomprimir en esta carpeta el archivo "cypress-screenshots-ghost3" que se encuentra en [Resultados ejecución pruebas](https://github.com/tpambor/MISW4103-Final/actions/runs/5101154214).
 6. En la carpeta ResembleJS crear una carpeta llamada "ghost4". 
-7. Copiar en esta carpeta los screenshots resultantes de la ejecución con Ghost4 (que están dentro de la carpeta screenshots). O también se puede decargar y descomprimir en esta carpeta el archivo "cypress-screenshots-ghost4" que se encuentra en [Resultados ejecución pruebas](https://github.com/tpambor/MISW4103-VRT/actions/runs/4970812573).
+7. Copiar en esta carpeta los screenshots resultantes de la ejecución con Ghost4 o Ghost3 con Firefox (que están dentro de la carpeta screenshots). O también se puede decargar y descomprimir en esta carpeta el archivo "cypress-screenshots-ghost4" o "cypress-screenshots-ghost3-firefox" que se encuentra en [Resultados ejecución pruebas](https://github.com/tpambor/MISW4103-Final/actions/runs/5101154214).
 8. Desde la carpeta ResembleJS ejecutar el comando  `node index.js`
 9. Abrir el reporte, que queda en /ResembleJS/results/report.html
 
