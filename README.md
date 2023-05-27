@@ -15,7 +15,7 @@ VIDEO - FALTA
 ## Aspectos complementarios
 * [Inventario de pruebas manuales](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/Inventario%20de%20Pruebas%20Exploratorias.xlsx)
 * [Wiki con Pros y Contras de Herramientas](https://github.com/tpambor/MISW4103-Final/wiki)
-* [RESULTADOS DE ESTA SEMANA](https://github.com/tpambor/MISW4103-Final/wiki/Resultados-Semana-8)
+* [Resultados de esta semana](https://github.com/tpambor/MISW4103-Final/wiki/Resultados-Semana-8)
 * [Retrospectiva](https://miro.com/app/board/uXjVMFMo-RM=/?share_link_id=289633975934)
 
 ## Instrucciones para ejecutar las diferentes pruebas
@@ -48,13 +48,13 @@ VIDEO - FALTA
 6. En esa misma carpeta crear un archivo llamado ".jshintrc" que internamente tiene lo siguiente:
 ```json
 {
-  "esversion": 9,
+  "esversion": 11,
   "globals":{
     "Promise":true
   }
 }
 ```
-7. Ejecutar el análisis con `node node_modules/bin/jshint core`
+7. Ejecutar el análisis con `node node_modules/jshint/bin/jshint core`
 
 <a name="cypress"></a>
 ## Instrucciones para ejecutar pruebas con Cypress (E2E, VRT y Generación de Datos)
