@@ -18,6 +18,7 @@ jobs:
         with:
           start: docker run --rm -t -p 2368:2368 ghost:3.41.1
           working-directory: Cypress
+          config: screenshotEnabled=true
           spec: |
             cypress/e2e/create-post.cy.js
             cypress/e2e/create-tag.cy.js
@@ -35,7 +36,36 @@ jobs:
         with:
           name: cypress-videos-ghost3
           path: Cypress/cypress/videos
-          
+
+  cypress-ghost3-firefox:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Cypress run
+        uses: cypress-io/github-action@v5
+        with:
+          start: docker run --rm -t -p 2368:2368 ghost:3.41.1
+          working-directory: Cypress
+          config: screenshotEnabled=true
+          spec: |
+            cypress/e2e/create-post.cy.js
+            cypress/e2e/create-tag.cy.js
+            cypress/e2e/editar-perfil.cy.js
+          wait-on: 'http://localhost:2368'
+          browser: firefox
+      - run: touch Cypress/cypress/screenshots && touch Cypress/cypress/videos
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cypress-screenshots-ghost3-firefox
+          path: Cypress/cypress/screenshots
+      - uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: cypress-videos-ghost3-firefox
+          path: Cypress/cypress/videos
+
   cypress-ghost4:
     runs-on: ubuntu-latest
     steps:
@@ -46,6 +76,7 @@ jobs:
         with:
           start: docker run --rm -t -p 2368:2368 ghost:4.44.0
           working-directory: Cypress
+          config: screenshotEnabled=true
           wait-on: 'http://localhost:2368'
           browser: chrome
           spec: |
@@ -64,7 +95,7 @@ jobs:
           name: cypress-videos-ghost4
           path: Cypress/cypress/videos
 
-  vrt:
+  vrt-ghost4:
     runs-on: ubuntu-latest
     needs: [cypress-ghost3, cypress-ghost4]
     steps:
@@ -102,7 +133,7 @@ jobs:
           path: ResembleJS/results
 
   deploy:
-    needs: vrt
+    needs: vrt-ghost4
     permissions:
       pages: write
       id-token: write
