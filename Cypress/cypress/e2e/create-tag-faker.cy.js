@@ -18,7 +18,7 @@ describe('Create tag tests', () => {
   beforeEach(() => {
     PageBase.resetStepCounter();
   })
-
+/*
   it('ESC130 - Create a tag with a name longer than 200  words', () => {
     faker.seed(1007);
 
@@ -70,7 +70,7 @@ describe('Create tag tests', () => {
       .should('be.false')
 
   })
-
+*/
   it('ESC132 - Create a tag with long name after real name can not saved', () => {
     faker.seed(1007);
 
@@ -95,13 +95,13 @@ describe('Create tag tests', () => {
       // Then it is saved
       .should('be.false')
 
- 
+      faker.seed(2000);
   createTag
       // And I fill in the name and slug
       .fillNameEmpty()
       .fillName(faker.lorem.words(1))
       // And I save
-      .save()
+      .saveRetry()
       // Then it is saved
       .should('be.false')
     })

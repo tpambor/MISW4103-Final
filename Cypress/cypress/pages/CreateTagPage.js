@@ -53,6 +53,21 @@ class CreateTagPage extends PageBase {
       .then(() => result.trim() === 'Saved')
   }
 
+  saveRetry() {
+    let button = cy.contains('button', 'Retry');
+    button.click();
+
+    let result = "";
+
+    return button.invoke('text')
+      .should(($text) => {
+        result = $text;
+        expect($text.trim()).to.be.oneOf(['Retry', 'Saved'])
+      })
+      .then(() => this.screenshot('save'))
+      .then(() => result.trim() === 'Saved')
+  }
+
   getErrorMessage() {
     return cy.get('.error p.response');
   }
