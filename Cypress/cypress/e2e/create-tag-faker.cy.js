@@ -19,7 +19,7 @@ describe('Create tag tests', () => {
     PageBase.resetStepCounter();
   })
 
-  it('ESC58 - Create a tag with a name longer than 200  words', () => {
+  it('ESC130 - Create a tag with a name longer than 200  words', () => {
     faker.seed(1007);
 
     const nav = pageFactory.navigation()
@@ -44,7 +44,7 @@ describe('Create tag tests', () => {
 
   })
 
-  it('ESC60 - Create a tag with a Slug longer than 200  words', () => {
+  it('ESC131 - Create a tag with a Slug longer than 200  words', () => {
     faker.seed(1007);
 
     const nav = pageFactory.navigation()
@@ -71,7 +71,7 @@ describe('Create tag tests', () => {
 
   })
 
-  it('ESC61 - Create a tag with long name after real name can not saved', () => {
+  it('ESC132 - Create a tag with long name after real name can not saved', () => {
     faker.seed(1007);
 
     const nav = pageFactory.navigation()

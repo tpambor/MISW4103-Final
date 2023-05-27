@@ -19,7 +19,7 @@ describe('Editar Perfil validacion', () => {
     PageBase.resetStepCounter(); 
   })
 
-  it('ESC55 - Validate min password length', () => {
+  it('ESC126 - Validate min password length', () => {
     faker.seed(1014);
 
     const nav = pageFactory.navigation()
@@ -47,7 +47,7 @@ describe('Editar Perfil validacion', () => {
     });
   })
 
-  it('ESC56 - Validate min confirm password length', () => {
+  it('ESC127 - Validate min confirm password length', () => {
     faker.seed(1014);
 
     const nav = pageFactory.navigation()
@@ -75,7 +75,7 @@ describe('Editar Perfil validacion', () => {
     });
   })
 
-  it('ESC57 - Validate max password length', () => {
+  it('ESC128 - Validate max password length', () => {
     faker.seed(1014);
 
     const nav = pageFactory.navigation()
@@ -113,7 +113,7 @@ describe('Editar Perfil validacion', () => {
     faker.seed(4000);
   })
 
-  it('ESC58 - Validate max Bio 10000 length', () => {
+  it('ESC129 - Validate max Bio 10000 length', () => {
     faker.seed(1014);
 
     const nav = pageFactory.navigation()
