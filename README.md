@@ -46,12 +46,14 @@ VIDEO - FALTA
 4. Bajar los git submodules con `git submodule update --init --recursive`
 5. Instalar el programa JSHint con `npm install --save-dev jshint`
 6. En esa misma carpeta crear un archivo llamado ".jshintrc" que internamente tiene lo siguiente:
+```json
 {
   "esversion": 9,
   "globals":{
     "Promise":true
   }
 }
+```
 7. Ejecutar el análisis con `node node_modules/bin/jshint core`
 
 <a name="cypress"></a>
