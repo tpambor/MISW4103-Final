@@ -37,7 +37,7 @@ describe('Editar Perfil validacion', () => {
   staffList.getUsernames().first().invoke('text').then((existingUsername) => {      
   const editProfile = staffList.editProfile(existingUsername);
 
-  editProfile.fillOldPassword(Cypress.env('password'));
+  //editProfile.fillOldPassword(Cypress.env('password'));
   editProfile.fillConfirmPassword(passwordConfirm);
   editProfile.fillPassword(passwordMin);
 
@@ -65,7 +65,7 @@ describe('Editar Perfil validacion', () => {
   staffList.getUsernames().first().invoke('text').then((existingUsername) => {      
   const editProfile = staffList.editProfile(existingUsername);
 
-  editProfile.fillOldPassword(Cypress.env('password'));
+ // editProfile.fillOldPassword(Cypress.env('password'));
   editProfile.fillConfirmPassword(passwordConfirm);
   editProfile.fillPassword(passwordMin);
 
