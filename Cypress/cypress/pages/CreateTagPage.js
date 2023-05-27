@@ -10,6 +10,19 @@ class CreateTagPage extends PageBase {
     return this;
   }
 
+  fillNameEmpty() {
+    cy.get('input[name="name"]').clear({ force: true });
+      this.screenshot('fillNameEmpty');
+    return this;
+  }
+
+  fillSlug(value) {
+    cy.get('input[name="slug"]').type(value);
+    this.screenshot('fillSlug');
+
+    return this;
+  }
+
   fillColor(value) {
     cy.get('input[name="accent-color"][type="text"]').type(value);
     cy.get('label[for="accent-color"]').click();
