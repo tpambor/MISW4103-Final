@@ -84,7 +84,7 @@ VIDEO - FALTA
 2. Ir a la carpeta Cypress
 3. Instalar las dependencias con `npm install`
 4. Ejecutar Ghost 3.41.1 con Docker `docker run --rm -t -p 2368:2368 ghost:3.41.1` (recomendado) o de forma local siguiendo las instrucciones del [tutorial](https://thesoftwaredesignlab.github.io/AutTestingCodelabs/ghost-local-deployment/index.html)
-   * (OPCIONAL): Si se desea hacer una prueba de regresión visual, se deben seguir estos mismos pasos pero cambiando la versión de Ghost, por ejemplo, por la 4.44.0, y configurando la opción correspondiente en el archivo `cypress.config.js` (ver paso 7).
+   * (OPCIONAL): Si se desea hacer una prueba de regresión visual, se deben seguir estos mismos pasos pero cambiando la versión de Ghost, por ejemplo, por la 4.44.0, y configurando la opción correspondiente en el archivo `cypress.config.js` (ver paso 7). Las pruebas con el sufijo `.ghost3.cy.js` solo se han probado y no se recomiendan para regresión visual.
 5. Si Ghost está ubicado en una dirección differente a http://localhost:2368, hay que cambiar el `baseUrl` en `cypress.config.js`
 6. Si aun **no** ha creado un sitio en Ghost
     * se puede crear de forma automatizado, ir a punto 8
