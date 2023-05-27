@@ -13,15 +13,15 @@ ESTRATEGIA - FALTA
 VIDEO - FALTA
 
 ## Aspectos complementarios
-* [Inventario de pruebas manuales](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/Inventario%20de%20Pruebas%20Exploratorias.xlsx)
+* [Inventario de pruebas manuales](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/InventarioPruebasExploratorias.pdf). También se puede ver el documento original en excel: [Inventario de pruebas en excel](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/InventarioPruebasExploratorias.xlsx)
 * [Wiki con Pros y Contras de Herramientas](https://github.com/tpambor/MISW4103-Final/wiki)
 * [Resultados de esta semana](https://github.com/tpambor/MISW4103-Final/wiki/Resultados-Semana-8)
 * [Retrospectiva](https://miro.com/app/board/uXjVMFMo-RM=/?share_link_id=289633975934)
 
 ## Instrucciones para ejecutar las diferentes pruebas
+* [Análisis estático con SonarQube](#sonarqube)
 * [Análisis estático con ESLint](#eslint)
 * [Análisis estático con JSHint](#jshint)
-* [Análisis estático con SonarQube](#sonar)
 * [Pruebas con Cypress](#cypress)
 * [Reporte de regresión visual](#reporte)
 * [Pruebas con Kraken](#kraken)
