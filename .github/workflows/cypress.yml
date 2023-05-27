@@ -18,7 +18,7 @@ jobs:
         with:
           start: docker run --rm -t -p 2368:2368 ghost:3.41.1
           working-directory: Cypress
-          config: screenshotEnabled=true
+          env: screenshotEnabled=true
           spec: |
             cypress/e2e/create-post.cy.js
             cypress/e2e/create-tag.cy.js
@@ -47,7 +47,7 @@ jobs:
         with:
           start: docker run --rm -t -p 2368:2368 ghost:3.41.1
           working-directory: Cypress
-          config: screenshotEnabled=true
+          env: screenshotEnabled=true
           spec: |
             cypress/e2e/create-post.cy.js
             cypress/e2e/create-tag.cy.js
@@ -76,7 +76,7 @@ jobs:
         with:
           start: docker run --rm -t -p 2368:2368 ghost:4.44.0
           working-directory: Cypress
-          config: screenshotEnabled=true
+          env: screenshotEnabled=true
           wait-on: 'http://localhost:2368'
           browser: chrome
           spec: |
