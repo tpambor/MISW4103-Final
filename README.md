@@ -14,7 +14,7 @@ Puede verse el documento en Word aquí: [Estrategia en Word](https://github.com/
 Un resumen de la estrategia se puede encontrar aquí: [Resumen estrategia](https://github.com/tpambor/MISW4103-Final/wiki/Estrategia-de-pruebas).
 
 ## Video
-VIDEO - FALTA
+[`https://uniandes-my.sharepoint.com/:v:/g/personal/t_pambor_uniandes_edu_co/EcmXLVKVUjVIph4JCtobVdYBBxCjogMBQ8seSG6HOxvtqw?e=ZOovg4`](https://uniandes-my.sharepoint.com/:v:/g/personal/t_pambor_uniandes_edu_co/EcmXLVKVUjVIph4JCtobVdYBBxCjogMBQ8seSG6HOxvtqw?e=ZOovg4)
 
 ## Aspectos complementarios
 * [Inventario de pruebas manuales](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/InventarioPruebasExploratorias.pdf). También se puede ver el documento original en excel: [Inventario de pruebas en excel](https://github.com/tpambor/MISW4103-Final/blob/main/Estrategia/InventarioPruebasExploratorias.xlsx)
